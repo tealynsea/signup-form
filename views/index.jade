@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	h1 Hello Boulder!
+
+	//-h3 Last Submission
+	//-p #{submissionData.username}
+	//-p #{submissionData.email}
+
+	form(method="post", action="/formsubmit")
+		input(name="username", type="text", placeholder="Username")
+		input(name="email", type="email", placeholder="Email")
+		input(type="submit")
+
+
